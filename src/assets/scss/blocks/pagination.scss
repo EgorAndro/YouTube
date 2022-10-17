@@ -1,0 +1,30 @@
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 8rem;
+  &__item {
+    margin: 0 .5rem;
+  }
+  &__link {
+    display: block;
+    width: 4rem;
+    height: 4rem;
+    background: #0D0D0D;
+    box-shadow: 0px 0px 10px rgba($black, 0.15);
+    border-radius: 3px;
+    font-size: 1.4rem;
+    line-height: 4rem;
+    text-align: center;
+    color: $white;
+    text-decoration: none;
+
+    &:hover {
+      background: lighten(#0d0d0d, 2%);
+    }
+    &.active {
+      background: $blue;
+      box-shadow: 0px 0px 10px rgba($blue, 0.15);
+      cursor: inherit;
+    }
+  }
+}
